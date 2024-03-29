@@ -1,0 +1,70 @@
+<% layout("/layouts/boilerplate")%>
+<div class="row">
+  <div class="col-8 offset-2">
+    <h3>Create a new post:</h3>
+    <form method="post" action="/listings"  class="needs-validation" novalidate>
+      <div class="mb-3">
+        <lable for="Title " class="form-label">Title</lable><br>
+        <input name="listing[title]" placeholder="Add a catchy title" type="text"class="form-label" required>
+        <br>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <lable for="description " class="form-label">Description</lable><br>
+        <textarea
+        name="listing[description]"
+        class="form-label" style="width:100%;" required
+      ></textarea>
+      <br>
+      <div class="valid-feedback">
+        Enter a valid description
+      </div>
+      </div>
+
+      <div class="mb-3">
+        <lable for="images" class="form-label">Image Link</lable><br>
+        <input
+        name="listing[images]"
+        placeholder="enter images URL/Link"
+        type="text"
+        class="form-control"
+        
+      /><br>
+      
+      </div>
+    <div class="row">
+      <div class="mb-3 col-md-3">
+        <lable for="price" class="form-label">Price</lable><br>
+        <input name="listing[price]" placeholder="1000" type="number"class="form-control " required>
+        <br>
+        <div class="invalid-feedback">
+          Enter a valid price range
+        </div>
+      </div>
+
+      <div class="mb-3 col-md-8">
+        <lable for="location" class="form-label">Location</lable><br>
+        <input name="listing[location]" placeholder="Delhi" type="text"class="form-control" required><br>
+        <div class="invalid-feedback">
+          Valid location is must!
+        </div>
+      </div>
+    </div>
+        <div class="mb-3">
+          <lable for="country" class="form-label">Country</lable><br>
+          <input name="listing[country]" placeholder="India" type="text" required>
+          <br>
+          <div class="invalid-feedback">
+           Valid country is must!
+          </div>
+        </div>
+
+        <button style="background-color: #fe424d;"class="btn btn-dark add-btn">Add</button>
+        <br><br>
+    </form>
+  </div>
+</div>
+

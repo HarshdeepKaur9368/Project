@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate")%>
+<div class="row mt-3 offset-3">
+  <div class="col-8 offset-3"style="width: 100%;">
+    <h1>Signup for Users:</h1>
+     <form  method="post" action="/signup" class="needs-validation" novalidate>
+        <div class="mb-3" >
+            <lable for="username " class="form-label">Username</lable><br>
+            <input name="username" 
+            id="username"
+            type="text"
+            class="form-label"
+            required>
+            <br>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            </div>
+            <div class="mb-3" >
+                <lable for="email " class="form-label">Email</lable><br>
+                <input name="email" 
+                id="email"
+                type="text"
+                class="form-label"
+                required>
+                <br>
+                </div>
+                <div class="mb-3" >
+                    <lable for="password " class="form-label">Password</lable><br>
+                    <input name="password" 
+                    id="password"
+                    type="password"
+                    class="form-label"
+                    required>
+                    <div class="invalid-feedback">
+                        Password must have 1,2,#,* characters.
+                       </div>
+                    <br>
+                    </div>
+                    <button class="btn btn-success">Submit</button>
+        </div>
+     </form>
+</div>
+ </div>
